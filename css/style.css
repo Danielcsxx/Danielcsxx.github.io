@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.helloWorld {
+    font-size: 16rem;
+    color: rgba(251, 255, 255, 0.404);
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.background-animated {
+    min-height: 100vh;
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(to right, #960404, #83270b, #4d089c);
+    background-size: 400% 400%;
+    animation: animated-background 10s infinite ease-in-out;
+}
+
+@keyframes animated-background {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
